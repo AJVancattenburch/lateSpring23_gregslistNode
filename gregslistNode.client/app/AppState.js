@@ -13,6 +13,9 @@ class ObservableAppState extends EventEmitter {
   values = loadState('values', [Value])
   socketData = []
 
+  /** @type {import('./models/House.js').House[]} */
+  houses = []
+
   // Used to load initial data
   init() {
 
